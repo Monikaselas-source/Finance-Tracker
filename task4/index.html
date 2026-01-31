@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1> Finance Tracker</h1>
+
+    
+    <div class="filters">
+      <label>
+        <input type="date" id="fromDate">
+        <input type="date" id="toDate">
+
+        <input type="number" id="minAmount" placeholder="High Spend Amount">
+
+      </label>
+      <button id="filterBtn">Apply Filters</button>
+      <button id="exportBtn">Export JSON</button>
+    </div>
+
+    
+    <div class="balance">
+      <h2>Total Balance: ₹<span id="balance">0</span></h2>
+    </div>
+
+    
+    <ul id="transactionList"></ul>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
